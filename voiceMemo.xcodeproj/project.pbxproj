@@ -12,6 +12,7 @@
 		062224972B7BBBA900D5DD6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062224962B7BBBA900D5DD6F /* Assets.xcassets */; };
 		0622249A2B7BBBA900D5DD6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062224992B7BBBA900D5DD6F /* Preview Assets.xcassets */; };
 		062224A32B7BBE8700D5DD6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062224A22B7BBE8700D5DD6F /* LaunchScreen.storyboard */; };
+		062224A72B7CFF9100D5DD6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062224A62B7CFF9100D5DD6F /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		062224992B7BBBA900D5DD6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		062224A02B7BBE0400D5DD6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		062224A22B7BBE8700D5DD6F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		062224A62B7CFF9100D5DD6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,10 @@
 			isa = PBXGroup;
 			children = (
 				062224A12B7BBE3500D5DD6F /* App */,
+				062224A82B7D000100D5DD6F /* Core */,
+				062224A92B7D000A00D5DD6F /* Component */,
+				062224AA2B7D001B00D5DD6F /* Feature */,
+				062224AB2B7D003400D5DD6F /* Model */,
 				062224A02B7BBE0400D5DD6F /* Info.plist */,
 				062224942B7BBBA400D5DD6F /* ContentView.swift */,
 				062224962B7BBBA900D5DD6F /* Assets.xcassets */,
@@ -76,8 +82,69 @@
 			children = (
 				062224922B7BBBA400D5DD6F /* voiceMemoApp.swift */,
 				062224A22B7BBE8700D5DD6F /* LaunchScreen.storyboard */,
+				062224A62B7CFF9100D5DD6F /* AppDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		062224A82B7D000100D5DD6F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				062224AC2B7D009D00D5DD6F /* Service */,
+				062224AD2B7D00A700D5DD6F /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		062224A92B7D000A00D5DD6F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		062224AA2B7D001B00D5DD6F /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				062224AE2B7D00F100D5DD6F /* Onboarding */,
+				062224AF2B7D010800D5DD6F /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		062224AB2B7D003400D5DD6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		062224AC2B7D009D00D5DD6F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		062224AD2B7D00A700D5DD6F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		062224AE2B7D00F100D5DD6F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		062224AF2B7D010800D5DD6F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062224A72B7CFF9100D5DD6F /* AppDelegate.swift in Sources */,
 				062224952B7BBBA400D5DD6F /* ContentView.swift in Sources */,
 				062224932B7BBBA400D5DD6F /* voiceMemoApp.swift in Sources */,
 			);
@@ -292,7 +360,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -323,7 +391,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
