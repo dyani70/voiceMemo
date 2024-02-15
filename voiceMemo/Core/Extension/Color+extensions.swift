@@ -17,7 +17,5 @@ extension Color {
     static let customOrange = Color("customOrange")
     static let customSky = Color("customSky")
     static let customWhite = Color("customWhite")
-    
-    
-    //testtest
+
 }
